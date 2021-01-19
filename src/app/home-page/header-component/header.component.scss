@@ -1,0 +1,54 @@
+.header {
+    
+    &:after {
+        content: '';
+        background: url("../../../assets/sea2.jpg") no-repeat;
+        // background-color: black;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        height: 500px;
+        z-index: -1; 
+    }
+
+    .header-block, .social-link{
+        margin: 0 auto;
+        width: 400px;
+        text-align: center;
+
+        p {
+            font-weight: bold;
+            margin: 5px 0;
+        }
+    }
+
+    .image-block {
+
+        img {
+            margin-top: 50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+    }
+
+    .social-link {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            
+            .social {
+                margin: 0 12px;
+            }
+        }
+
+    }
+}

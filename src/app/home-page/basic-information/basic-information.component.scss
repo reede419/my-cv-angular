@@ -1,0 +1,47 @@
+.my-information {
+    display: flex;
+    margin: 50px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px lightslategrey;
+
+    .about, .basic-information {
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .about {
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+
+    .basic-information {
+        // display: flex;
+        // line-height: 200px;
+        h2 {
+            text-align: center;
+        }
+
+        .basic-inform {
+            display: flex;
+            margin: auto;
+            font-size: 18px;
+            height: 200px;
+
+            .name-option {
+                font-weight: bold;
+                margin: auto;
+            }
+
+            .value-option {
+                // margin-left: 30px;
+                margin: auto;
+            }
+        }
+    }
+}

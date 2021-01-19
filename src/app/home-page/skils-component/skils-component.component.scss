@@ -1,0 +1,68 @@
+.mySkils {
+    display: flex;
+    margin: 50px;
+
+
+    h2 {
+        text-align: center;
+    }
+
+    .workSkils {
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 10px 10px 5px lightslategrey;
+        width: 40%;
+
+        .skils {
+            display: flex;
+            justify-content: space-around;
+
+            .workSkilsName {
+                p {
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 35px 0;
+                }
+            }
+            
+            .jsSkils {
+                // display: flex;
+                // justify-content: center;
+                margin: 30px 0;
+    
+                p {
+                    font-weight: bold;
+                    margin: 8px;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+    }
+
+    .photoBlock {
+        margin: 0 auto;
+        img {
+            display: block;
+        }
+    }
+
+    .rating {
+        display: inline-block;
+        font-size: 0;
+        margin: auto 0;
+        span {
+           padding: 0;
+           font-size: 35px;
+           line-height: 1;
+           color: lightgrey;
+        }
+    }
+    .rating > span:before {
+        content: '★';
+    }
+    .rating > span.active {
+        color: gold;
+    }
+}
