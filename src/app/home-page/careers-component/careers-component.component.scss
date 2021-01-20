@@ -1,0 +1,38 @@
+.my-careers {
+    margin: 50px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px lightslategrey;
+    padding: 1px;
+
+
+    .jobs {
+        display: flex;
+        margin: 20px 0;
+        .job-name, .job-inform {
+            width: 40%;
+            margin: auto;
+    
+            .careers-icon {
+                margin-right: 5px;
+            }
+            a {
+                text-decoration: none;
+                &:hover {
+                    color: red;
+                }
+            }
+    
+        }
+    
+        .job-name {
+            text-align: center;
+        }
+    }
+
+    hr {
+        width: 80%;
+        margin: auto;
+    }
+
+}

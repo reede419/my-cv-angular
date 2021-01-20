@@ -1,0 +1,30 @@
+.educations-courses {
+    display: flex;
+    justify-content: space-around;
+
+    .education, .courses {
+        width: 45%;
+        margin: 50px 50px 0 50px;       
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px lightslategrey;
+
+        h2 {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .degree, .course {
+            margin: 20px auto;
+            width: 80%;
+        }
+        .course {
+            text-align: center;
+        }
+
+        hr {
+            width: 80%;
+            margin: 30px auto;
+        }
+    }
+}

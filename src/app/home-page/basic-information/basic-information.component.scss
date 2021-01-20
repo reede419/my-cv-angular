@@ -21,8 +21,7 @@
     }
 
     .basic-information {
-        // display: flex;
-        // line-height: 200px;
+
         h2 {
             text-align: center;
         }
@@ -39,8 +38,11 @@
             }
 
             .value-option {
-                // margin-left: 30px;
                 margin: auto;
+            }
+
+            p {
+                margin: 10px 0;
             }
         }
     }

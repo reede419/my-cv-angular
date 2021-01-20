@@ -2,8 +2,7 @@
     
     &:after {
         content: '';
-        background: url("../../../assets/sea2.jpg") no-repeat;
-        // background-color: black;
+        background: url("../../../assets/frontend3.png") no-repeat;
         opacity: 0.5;
         top: 0;
         left: 0;
@@ -12,6 +11,7 @@
         position: absolute;
         height: 500px;
         z-index: -1; 
+        background-size: cover;
     }
 
     .header-block, .social-link{

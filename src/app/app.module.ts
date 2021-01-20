@@ -9,13 +9,22 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { BasicInformationComponent } from './home-page/basic-information/basic-information.component';
 import { SkilsComponentComponent } from './home-page/skils-component/skils-component.component';
+import { EducationsComponentComponent } from './home-page/educations-component/educations-component.component';
+import { CareersComponentComponent } from './home-page/careers-component/careers-component.component';
+import { MyProjectComponentComponent } from './home-page/my-project-component/my-project-component.component';
+import { FooterComponentComponent } from './home-page/footer-component/footer-component.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BasicInformationComponent,
-    SkilsComponentComponent
+    SkilsComponentComponent,
+    EducationsComponentComponent,
+    CareersComponentComponent,
+    MyProjectComponentComponent,
+    FooterComponentComponent
   ],
   imports: [
     BrowserModule,
