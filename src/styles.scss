@@ -28,17 +28,17 @@ color: #333;
     // box-sizing: content-box;
 }
 
-.profile, .educations, .careers, .abilities, .myProject {
-  width: 400px;
-  height: 100px;
-  margin: 50px auto 0 auto;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  align-items: center;
-  border-radius: 25px;
-  box-shadow: 10px 10px 5px lightslategrey;
-}
+// .profile, .educations, .careers, .abilities, .myProject {
+//   width: 400px;
+//   height: 100px;
+//   margin: 50px auto 0 auto;
+//   display: flex;
+//   justify-content: center;
+//   background-color: white;
+//   align-items: center;
+//   border-radius: 25px;
+//   box-shadow: 10px 10px 5px lightslategrey;
+// }
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -69,11 +69,13 @@ color: #333;
 
   a {
     color: black;
-    padding: 0.45rem;
+    padding: 16px;
     margin: 0 0.25rem;
 
     &:hover {
-      color: var(--light-color);
+        background-color: white;
+        border-radius: 10px;
+        // padding: 10px;
     }
   }
 }

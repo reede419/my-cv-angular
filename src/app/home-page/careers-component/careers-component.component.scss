@@ -1,9 +1,14 @@
 .my-careers {
-    margin: 50px;
+    margin: 90px 50px;
     background-color: white;
     border-radius: 25px;
     box-shadow: 10px 10px 5px lightslategrey;
     padding: 1px;
+
+    h2 {
+        text-align: center;
+        margin-top: 15px;
+    }
 
 
     .jobs {

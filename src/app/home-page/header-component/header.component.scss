@@ -44,11 +44,29 @@
         a {
             text-decoration: none;
             color: black;
+
+            &:hover {
+                color: red;
+            }
             
             .social {
                 margin: 0 12px;
             }
         }
 
+    }
+
+}
+.fixed-navigation {
+    position: fixed;
+    top: 0;
+
+    background-color: wheat;
+    .active {
+        background-color: white;
+        // padding: 16px;
+    // margin: 0 0.25rem;
+        border-radius: 10px;
+    //     // padding: 10px;
     }
 }

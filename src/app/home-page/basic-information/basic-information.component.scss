@@ -30,7 +30,7 @@
             display: flex;
             margin: auto;
             font-size: 18px;
-            height: 200px;
+            height: 100%;
 
             .name-option {
                 font-weight: bold;
@@ -39,11 +39,20 @@
 
             .value-option {
                 margin: auto;
+                p {
+                    margin: 10px 0;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
             }
 
-            p {
-                margin: 10px 0;
-            }
         }
     }
 }

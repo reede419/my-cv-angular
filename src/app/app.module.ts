@@ -13,6 +13,9 @@ import { EducationsComponentComponent } from './home-page/educations-component/e
 import { CareersComponentComponent } from './home-page/careers-component/careers-component.component';
 import { MyProjectComponentComponent } from './home-page/my-project-component/my-project-component.component';
 import { FooterComponentComponent } from './home-page/footer-component/footer-component.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 
 @NgModule({
@@ -28,7 +31,9 @@ import { FooterComponentComponent } from './home-page/footer-component/footer-co
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ScrollToModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
