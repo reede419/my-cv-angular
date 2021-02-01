@@ -41,3 +41,28 @@
     }
 
 }
+
+@media (max-width: 600px) {
+    .careers {
+        .my-careers {
+            margin: 50px 20px;
+
+            .jobs {
+                display: block;
+
+                .job-name, .job-inform {
+                    width: 90%;
+                }
+
+                .job-name {
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+
+                .job-inform {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

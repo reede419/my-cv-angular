@@ -1,12 +1,14 @@
 <div class="header">
+    <div class="mobile-header-block">
+        <div class="header-block image-block">
+            <img src="./assets/serhii.jpg" alt="">
+        </div>
+        <div class="header-block header-text">
+            <h1>I'm Serhii Klepach</h1>
+            <p>Web | Front-End developer</p>
+        </div>
+    </div>
 
-    <div class="header-block image-block">
-        <img src="./assets/serhii.jpg" alt="">
-    </div>
-    <div class="header-block header-text">
-        <h1>I'm Serhii Klepach</h1>
-        <p>Web | Front-End developer</p>
-    </div>
     <div class="social-link">
         <a href="https://www.facebook.com/profile.php?id=100017385486487"><fa-icon class="social" [icon]="faFacebook" size="2x"></fa-icon></a>
         <a href="https://www.instagram.com/serh_cool/"><fa-icon class="social" [icon]="faInstagram" size="2x"></fa-icon></a>
@@ -14,26 +16,39 @@
     </div>
 
 </div>
-<nav 
-    class="navbar bg-primary"
-    [ngClass]="{'fixed-navigation' : fixedClass}"
-    >
+<div class="mobile-navigation" [ngClass]="{'mobile-nav' : isClick}">
+    <input id="toggle" type="checkbox" [ngClass]="{'checked' : isChecked}">
 
-    <ul>
-        <li class="navigation" (click)="toAnchor('profile')">
-            <a [ngClass]="{'active' : activeP}" >Profile</a>
-        </li>
-        <li class="navigation" (click)="toAnchor('educations')">
-            <a [ngClass]="{'active' : activeE}" >Educations</a></li>
-        <li class="navigation" (click)="toAnchor('careers')">
-            <a [ngClass]="{'active' : activeC}" >Careers</a>
-        </li>
-        <li class="navigation" (click)="toAnchor('abilities')">
-            <a [ngClass]="{'active' : activeS}" >Abilities</a>
-        </li>
-        <li class="navigation" (click)="toAnchor('myProject')">
-            <a [ngClass]="{'active' : activePr}" >My Project</a>
-        </li>
-    </ul>
-</nav>
+        
+    <label class="toggle-container" for="toggle">
+    
+    <span 
+        class="button button-toggle"
+        (click)="mobileNav()" 
+    ></span>
+    </label>
+    <nav 
+        class="navbar bg-primary nav"
+        [ngClass]="{'fixed-navigation' : fixedMenu}"
+        >
+    
+        <ul>
+            <li class="navigation nav-item" (click)="toAnchor('profile')">
+                <a [ngClass]="{'active' : activeP}" >Profile</a>
+            </li>
+            <li class="navigation nav-item" (click)="toAnchor('educations')">
+                <a [ngClass]="{'active' : activeE}" >Educations</a></li>
+            <li class="navigation nav-item" (click)="toAnchor('careers')">
+                <a [ngClass]="{'active' : activeC}" >Careers</a>
+            </li>
+            <li class="navigation nav-item" (click)="toAnchor('abilities')">
+                <a [ngClass]="{'active' : activeS}" >Abilities</a>
+            </li>
+            <li class="navigation nav-item" (click)="toAnchor('myProject')">
+                <a [ngClass]="{'active' : activePr}" >My Project</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
 

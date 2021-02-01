@@ -65,3 +65,66 @@
         color: gold;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mySkils {
+
+        .photoBlock {
+            img {
+                width: 450px;
+                height: 450px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .mySkils {
+        display: block;
+        margin: 50px 20px;
+
+        .workSkils {
+            width: 100%;
+        }
+
+        .photoBlock {
+            margin: 40px auto 0 auto;
+            img {
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 769px) {
+    .abilities {
+        .mySkils {
+    
+            .photoBlock {
+                img {
+                    width: 400px;
+                    height: 400px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .abilities {
+        .mySkils {
+    
+            .photoBlock {
+                img {
+                    width: 280px;
+                    height: 280px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

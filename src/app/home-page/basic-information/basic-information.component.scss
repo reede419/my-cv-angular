@@ -56,3 +56,33 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .my-information {
+        display: block;
+        margin: 50px 20px;
+
+        .about, .basic-information {
+            width: 100%;
+
+            p {
+                padding: 10px;
+            }
+        }
+    }
+ }
+
+ @media (min-width: 601px) and (max-width: 991px) {
+    .my-information {
+        display: block;
+        margin: 50px 20px;
+
+        .about, .basic-information {
+            width: 100%;
+
+            p {
+                padding: 10px;
+            }
+        }
+    }
+ }

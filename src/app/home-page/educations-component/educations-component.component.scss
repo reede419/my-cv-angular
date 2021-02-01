@@ -28,3 +28,19 @@
         }
     }
 }
+
+@media (max-width: 769px) {
+    .educations-courses {
+        display: block;
+        margin: 50px 20px;
+
+        .education, .courses {
+            width: 100%;
+            margin: 0;
+        }
+
+        .courses {
+            margin-top: 50px;
+        }
+    }
+}

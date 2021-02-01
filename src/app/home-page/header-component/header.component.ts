@@ -15,12 +15,15 @@ export class HeaderComponent implements OnInit {
   faInstagram = faInstagram;
   faLinkedin  = faLinkedin
   far = far
-  fixedClass = false
+  fixedMenu = false
   activeP = false
   activeE = false
   activeC = false
   activeS = false
   activePr = false
+
+  isClick = false
+  isChecked = false
 
   constructor(
     private scrollToService: ScrollToService
@@ -30,7 +33,7 @@ export class HeaderComponent implements OnInit {
   }
   @HostListener('window:scroll', ['$event']) getScrollHeight(event) {
     if( window.pageYOffset >= 500 ) {
-      this.fixedClass = true
+      this.fixedMenu = true
 
       if ( window.pageYOffset >= 501 &&  window.pageYOffset <= 650 ) {
         this.activeP = true
@@ -63,12 +66,13 @@ export class HeaderComponent implements OnInit {
       }
 
     } else {
-      this.fixedClass = false
+      this.fixedMenu = false
     }
 
  }
   toAnchor(anchor: string) {
-    
+    this.isChecked = false
+    this.isClick = false
     const config: ScrollToConfigOptions = {
       target: anchor,
       duration: 2000,
@@ -79,5 +83,11 @@ export class HeaderComponent implements OnInit {
     this.scrollToService.scrollTo(config);
 
   }
+
+  mobileNav() {
+    this.isChecked = !this.isChecked
+    this.isClick = !this.isClick
+  }
+
 
 }
